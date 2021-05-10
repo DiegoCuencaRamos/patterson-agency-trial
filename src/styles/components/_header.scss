@@ -1,0 +1,55 @@
+@use '../base/settings';
+
+// Containers
+.header {
+    padding: settings.$s-size 0;
+}
+
+.header .container {
+    @include settings.flex(wrap, center, space-between)
+}
+
+.header__logo {
+    width: 18rem;
+}
+
+// Header cart
+.header-cart {
+    @include settings.flex(wrap, flex-end)
+}
+
+.header-cart__link {
+    margin-right: 0.6rem;
+}
+
+.header-cart__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.header-cart__counter {
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    padding: 1px 5px;
+    font-size: settings.$xs-size;
+    line-height: settings.$xs-size;
+    border-radius: 100px;
+    bottom: 20px;
+    right: 11px;
+}
+
+.header-cart__info * {
+    display: block;
+    line-height: settings.$m-size;
+}
+
+.header-cart__price {
+    color: settings.$font-gray;
+    font-size: 1.2rem;
+}
+
+.header-cart__text {
+    font-size: settings.$text-extra-small;
+    font-weight: bold;
+}

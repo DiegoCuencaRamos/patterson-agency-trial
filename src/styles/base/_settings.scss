@@ -1,0 +1,48 @@
+// Font sizes
+$text-normal: 1.5rem;
+$text-small: 1.4rem;
+$text-extra-small: 1.3rem;
+
+// Spacings
+$xs-size: 1rem;
+$s-size: 1.2rem;
+$m-size: 1.5rem;
+$l-size: 2rem;
+$xl-size: 4rem;
+$tablet-breakpoint: 800px;
+
+// Layouts
+@mixin flex($wrap-direction: false, $align-items: false, $justify-content: false) {
+    @if $align-items {
+        align-items: $align-items;
+    }
+    
+    display: flex;
+
+    @if $wrap-direction {
+        flex-wrap: $wrap-direction;
+    }
+    
+    @if $justify-content {
+        justify-content: $justify-content;
+    }
+}
+
+@mixin border-box() {
+    border-bottom: 1px solid $border-gray;
+    border-left: 1px solid $border-gray;
+    border-right: 1px solid $border-gray;
+    border-top: 4px solid $border-gray;
+    box-shadow: 1px 2px 1px rgb(0 0 0 / 2%);
+}
+
+// Colors
+$font-gray: gray;
+$border-gray: #d6d6d6;
+$background-gray: #F1F1F1;
+$btn-light-gray: #7b7b7b;
+$btn-dark-gray: #333333;
+
+
+// Shadows
+$box-shadow: 1px 2px 1px rgb(0 0 0 / 8%)

@@ -1,0 +1,7 @@
+@use '../base/settings';
+
+.separator {
+    height: settings.$xs-size;
+    background-color: settings.$background-gray;
+    margin-bottom: settings.$s-size;
+}

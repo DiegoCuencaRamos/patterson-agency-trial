@@ -1,0 +1,20 @@
+@use '../base/settings';
+
+.cart-page__main {
+    @include settings.border-box;
+    margin-bottom: settings.$m-size;
+    
+    @media screen and (min-width: settings.$tablet-breakpoint) {
+        flex-basis: 65%;
+        margin-bottom: 0;
+    }
+}
+
+.cart-page__aside {
+    flex-basis: 32%;
+}
+
+.product-list__header {
+    border-bottom: 1px solid settings.$border-gray;
+    padding: 1rem 3rem;
+}

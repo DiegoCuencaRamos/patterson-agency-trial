@@ -1,0 +1,32 @@
+@use '../base/settings';
+
+.cart-summary {
+    @include settings.border-box;
+    margin-bottom: 2rem;
+}
+
+.cart-sumary__info {
+    @include settings.flex(wrap, stretch, space-between);
+    border-bottom: 1px solid settings.$border-gray;
+    padding: 1.5rem 2rem;
+}
+
+.cart-sumary__price {
+    font-weight: 700;
+}
+
+.cart-summary__apply {
+    display: block;
+    padding: settings.$m-size settings.$l-size;
+}
+
+.cart-summary__btn {
+    background-color: settings.$btn-light-gray;
+    border: 0;
+    color: #fff;
+    font-size: settings.$text-small;
+    font-weight: bold;
+    padding: settings.$xs-size;
+    text-transform: uppercase;
+    width: 100%;
+}

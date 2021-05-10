@@ -1,0 +1,10 @@
+@use '../base/settings';
+
+.product-slider {
+    background-color: settings.$background-gray;
+}
+
+.product-slider__slides {
+    @include settings.flex(false, baseline, space-between);
+    overflow: hidden;
+}

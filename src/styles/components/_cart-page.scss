@@ -1,0 +1,7 @@
+@use '../base/settings';
+
+.cart-page__content .container {
+    @media screen and (min-width: settings.$tablet-breakpoint) {
+        @include settings.flex(wrap, flex-start, space-between);
+    }
+}

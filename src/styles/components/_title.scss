@@ -1,0 +1,24 @@
+@use '../base/settings';
+
+.page-title {
+    background-color: settings.$background-gray;
+    padding-bottom: settings.$s-size;
+}
+
+.page-title .container {
+    @include settings.flex(wrap, center, space-between);
+}
+
+.breadcrumbs {
+    list-style: none;
+    padding: 0;
+}
+
+.breadcrumbs__item {
+    display: inline-block;
+    font-size: settings.$text-small;
+
+    span {
+        padding: 0 settings.$xs-size;
+    }
+}

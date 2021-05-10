@@ -1,0 +1,27 @@
+@use '../base/settings';
+
+.cart-discount {
+    @include settings.flex(wrap, stretch, flex-start);
+
+    input{
+        border: 1px solid settings.$border-gray;
+        outline: none;
+        padding: settings.$xs-size;
+        transition: all 0.2s ease-in-out;
+    }
+
+    button {
+        background-color: settings.$btn-dark-gray;
+        border: 0;
+        border-radius: 0;
+        color: #fff;
+        font-size: settings.$text-small;
+        font-weight: 700;
+        padding: settings.$xs-size;
+        text-transform: uppercase;
+    }
+    @media screen and (min-width: settings.$tablet-breakpoint) {
+        @include settings.flex(wrap, stretch, space-between);
+    }
+   
+}
